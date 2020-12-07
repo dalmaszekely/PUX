@@ -10,6 +10,8 @@ var live_vision;
 var personal_awards;
 var time_for_passion;
 
+var cluster;
+
 
 function register(){
     getInputs();
@@ -24,6 +26,11 @@ function getInputs(){
     else sufficient_income = 0;
 
     fruits_veggies = document.getElementById("fruits_veggies").value;
+    if(fruits_veggies < 2.5402) cluster = 1;
+    else if(fruits_veggies < 2.9545) cluster = 4;
+    else if(fruits_veggies < 3.2634) cluster = 2;
+    else cluster = 3;
+
     places_visited = document.getElementById("places_visited").value;
     daily_shouting = document.getElementById("daily_shouting").value;
     supporting_others = document.getElementById("supporting_others").value;
@@ -33,7 +40,7 @@ function getInputs(){
     personal_awards = document.getElementById("personal_awards").value;
     time_for_passion = document.getElementById("time_for_passion").value;
 
-    openPersonalPage("cluster1");
+    openPersonalPage(cluster);
 
 }
 
@@ -47,5 +54,5 @@ function getBMI(){
 }
 
 function openPersonalPage(cluster){
-    window.location.href = window.location + '/' + cluster + '.html';
+    location.replace("./cluster_" + cluster + ".html")
 }

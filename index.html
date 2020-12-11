@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+
+<head>
+	<title>PUX</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="pux.css">
+	<script src="pux.js"></script>
+
+	<link rel="shortcut icon" type="image/png" href="logok/favicon.png">
+</head>
+
+<body>
+	<div class="mobile">
+		<label for="gender">What is your gender?</label><br>
+		<select name="gender" id="gender">
+			<option value="woman">Woman</option>
+			<option value="man">Man</option>
+			<option value="other">Other</option>
+			<option value="not">Prefer not to answer</option>
+		</select>
+		<br>
+
+		<label for="weight">Provide weight:</label><br>
+		<input type="text" id="weight" name="weight"><br>
+		<label for="height">Provide height:</label><br>
+		<input type="text" id="height" name="height"><br>
+
+		<label>How sufficient is your income to cover basic life expenses?</label><br>
+		<label class="switch">
+			<input type="checkbox" id="sufficient_income">
+			<span class="slider round"></span>
+		</label>
+		<br>
+
+		<label for="fruits_veggies">How many fruits or vegetables do you eat every day?</label><br>
+		<label>0</label>
+		<input type="range" id="fruits_veggies" name="fruits_veggies" min="0" max="5">
+		<label>5</label>
+		<br>
+
+		<label for="places_visited">How many new places do you visit over a period of 12 months?</label><br>
+		<label>0</label>
+		<input type="range" id="places_visited" name="places_visited" min="0" max="10">
+		<label>10</label>
+		<br>
+
+		<label for="daily_shouting">How often do you shout or sulk at somebody in a typical week?</label><br>
+		<label>0</label>
+		<input type="range" id="daily_shouting" name="daily_shouting" min="0" max="10">
+		<label>10</label>
+		<br>
+
+		<label for="supporting_others">How many people do you help achieve a better life over a period of 12
+			months?</label><br>
+		<label>0</label>
+		<input type="range" id="supporting_others" name="supporting_others" min="0" max="10">
+		<label>10</label>
+		<br>
+
+		<label for="core_circle">How many people are very close to you?</label><br>
+		<label>0</label>
+		<input type="range" id="core_circle" name="core_circle" min="0" max="10">
+		<label>10</label>
+		<br>
+
+		<label for="achievement">How many remarkable achievements are you proud of over the last 12 months?</label><br>
+		<label>0</label>
+		<input type="range" id="achievement" name="achievement" min="0" max="10">
+		<label>10</label>
+		<br>
+
+		<label for="live_vision">For how many years ahead is your life vision very clear for?</label><br>
+		<label>0</label>
+		<input type="range" id="live_vision" name="live_vision" min="0" max="10">
+		<label>10</label>
+		<br>
+
+		<label for="personal_awards">How many recognitions have you received in your life?</label><br>
+		<label>0</label>
+		<input type="range" id="personal_awards" name="personal_awards" min="0" max="10">
+		<label>10</label>
+		<br>
+
+		<label for="time_for_passion">How many hours do you spend every day doing what you are passionate
+			about?</label><br>
+		<label>0</label>
+		<input type="range" id="time_for_passion" name="time_for_passion" min="0" max="10">
+		<label>10</label>
+		<br>
+
+		<button type="button" onclick="register()" class="button">Register</button>
+	</div>
+</body>
+
+</HTML>

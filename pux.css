@@ -1,3 +1,7 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -54,4 +58,33 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.mobile {
+  background-color: #89D1FE;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 30px;
+}
+
+.button {
+  margin: 20px 0px 0px 5px;
+  border-radius: 6px;
+  padding: 5px;
+  border: solid 1px black;
+  box-shadow: 3px 3px 3px black;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.finProd {
+  background-color: #89D1FE;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 30px;
+  margin-bottom: 10px;
 }
